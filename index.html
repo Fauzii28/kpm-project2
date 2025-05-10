@@ -5,19 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Belajar TailwindCss Cuks</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
   </head>
   <body>
     <!-- Navbar Start-->
     <nav
-      class="flex justify-between px-40 text-amber-950 items-center fixed top-0 left-0 right-0 shadow-md py-4 bg-white z-10"
+      id="navbar"
+      class="flex justify-between px-[8%] max-sm:px-5 text-white items-center fixed top-0 left-0 right-0 py-4 bg-transparent z-10 transition-all duration-300 ease-in-out"
     >
       <h1 class="text-2xl font-bold">Kopi DuaHiji</h1>
-      <ul class="flex gap-5 text-lg font-semibold">
+      <ul class="flex gap-5 text-lg font-semibold max-md:hidden">
         <li><a href="#">Beranda</a></li>
         <li><a href="#">Tentang</a></li>
         <li><a href="#">Produk</a></li>
         <li><a href="#">Kontak</a></li>
       </ul>
+      <i class="ph ph-list hidden max-md:block text-3 xl font-bold"></i>
     </nav>
     <!-- Navbar End-->
     <!-- Hero Start -->
@@ -28,15 +40,19 @@
       <div class="h-screen w-full bg-black/50 absolute"></div>
 
       <div class="absolute text-white text-center">
-        <h1 class="font-bold text-6xl text-amber-600 mb-3">
+        <h1
+          class="font-bold text-6xl max-md:text-5xl max-sm:text-4xl text-amber-600 mb-3"
+        >
           Rasakan Cita Rasa
           <span class="block text-white">Kopi DuaHiji</span>
         </h1>
-        <p class="text-lg mb-5">
+        <p class="text-lg max-sm:text-base mb-5">
           kopi premium membuat cita rasa yang menggelegar dapat membuat
           berimajinasi tinggi
         </p>
-        <a href="" class="bg-amber-900 text-lg py-3 px-5 rounded-full"
+        <a
+          href=""
+          class="bg-amber-900 text-lg max-sm:text-base py-3 px-5 rounded-full"
           >Jelajahi Imajinasi</a
         >
       </div>
@@ -48,7 +64,7 @@
       id="about"
       class="h-screen w-full flex justify-center items-center"
     >
-      <div class="w-[720px] text-center text-lg">
+      <div class="w-[720px] text-center text-lg max-md:mx-10">
         <h1 class="text-4xl font-bold text-amber-950 mb-3">Tentang Kami</h1>
         <p class="text-amber-900">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
@@ -58,11 +74,19 @@
         </p>
         <div class="flex justify-center gap-10 mt-5">
           <div>
-            <img src="/img/kopi1.jpg" alt="" class="w-52 rounded-full" />
+            <img
+              src="img/kopi1.jpg"
+              alt=""
+              class="w-52 max-md:w-40 rounded-full"
+            />
             <p class="text-amber-900 font-semibold">Menggugah Overthinking</p>
           </div>
           <div>
-            <img src="/img/kopi2.jpg" alt="" class="w-52 rounded-full" />
+            <img
+              src="img/kopi2.jpg"
+              alt=""
+              class="w-52 max-md:w-40 rounded-full"
+            />
             <p class="text-amber-900 font-semibold">Biji Kopi Pikiran</p>
           </div>
         </div>
@@ -73,13 +97,15 @@
     <!-- Produk START-->
     <section
       id="produk"
-      class="h-screen w-full flex justify-center items-center bg-amber-100"
+      class="xl:h-screen py-10 w-full flex justify-center items-center bg-amber-100"
     >
       <div>
-        <h1 class="font-bold text-4xl text-amber-950 text-center mb-5">Produk Unggul</h1>
-        <div class="flex gap-5">
+        <h1 class="font-bold text-4xl text-amber-950 text-center mb-5">
+          Produk Unggul
+        </h1>
+        <div class="flex flex-wrap justify-center gap-5">
           <div class="w-96 bg-white p-4 rounded-lg shadow-lg space-y-2">
-            <img src="/img/kopi3.jpg" alt="" class="rounded-lg" />
+            <img src="img/kopi3.jpg" alt="" class="rounded-lg" />
             <h1 class="font-bold text-xl text-amber-950">Chiko</h1>
             <p class="text-amber-950">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
@@ -89,7 +115,7 @@
             <p class="font-bold text-lg text-amber-950">Rp. 15.000</p>
           </div>
           <div class="w-96 bg-white p-4 rounded-lg shadow-lg space-y-2">
-            <img src="/img/kopi4.jpg" alt="" class="rounded-lg" />
+            <img src="img/kopi4.jpg" alt="" class="rounded-lg" />
             <h1 class="font-bold text-xl text-amber-950">Chika</h1>
             <p class="text-amber-950">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
@@ -99,7 +125,7 @@
             <p class="font-bold text-lg text-amber-950">Rp. 15.000</p>
           </div>
           <div class="w-96 bg-white p-4 rounded-lg shadow-lg space-y-2">
-            <img src="/img/kopi5.jpg" alt="" class="rounded-lg" /> 
+            <img src="img/kopi5.jpg" alt="" class="rounded-lg" />
             <h1 class="font-bold text-xl text-amber-950">Latter Art</h1>
             <p class="text-amber-950">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
@@ -112,13 +138,18 @@
       </div>
     </section>
     <!-- Produk END -->
-     
+
     <!-- Footer START -->
-    <footer id="kontak" class="py-10 bg-amber-950 text-white text-center space-y-2">
-        <h1 class="font-bold text-2xl">Hubungi I</h1>
-        <p class="text-md">Email: Duahiji@gmail.com</p>
-        <p class="text-md">&copy 2025 Duahiji Kopi</p>
+    <footer
+      id="kontak"
+      class="py-10 bg-amber-950 text-white text-center space-y-2 max-sm:space-y-3"
+    >
+      <h1 class="font-bold text-2xl">Hubungi I</h1>
+      <p class="text-md">Email: Duahiji@gmail.com</p>
+      <p class="text-md">&copy 2025 Duahiji Kopi</p>
     </footer>
-     <!-- Footer END -->
+    <!-- Footer END -->
+
+    <script src="script.js"></script>
   </body>
 </html>
